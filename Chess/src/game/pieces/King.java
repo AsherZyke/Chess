@@ -8,13 +8,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class King extends chessPiece {
+public class King extends ChessPiece {
 	
 	//Creates a king
 	public King ( int x, int y, int color ) {
-		setX( x );
-		setY( y );
-		setColor( color );
+	    super( x, y, color);
 	}
 
 	/* (non-Javadoc)

@@ -7,13 +7,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class Rook extends chessPiece {
+public class Rook extends ChessPiece {
 	
 	//Creates the Rook object
 	public Rook( int x, int y, int color ) {
-		setX( x );
-		setY( y );
-		setColor( color );
+	    super( x, y, color);
 	}
 
 	/* (non-Javadoc)

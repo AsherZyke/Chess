@@ -9,13 +9,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class Queen extends chessPiece {
+public class Queen extends ChessPiece {
 	
 	//Creates the Queen object
 	public Queen( int x, int y, int color ) {
-		setX( x );
-		setY( y );
-		setColor( color );
+	    super( x, y, color);
 	}
 
 	/* (non-Javadoc)

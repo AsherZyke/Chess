@@ -7,13 +7,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class Knight extends chessPiece {
+public class Knight extends ChessPiece {
     
     //Creates the Knight object
     public Knight( int x, int y, int color ) {
-        setX( x );
-        setY( y );
-        setColor( color );
+        super( x, y, color);
     }
 
     /* (non-Javadoc)

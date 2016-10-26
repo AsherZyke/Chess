@@ -7,13 +7,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class Bishop extends chessPiece {
+public class Bishop extends ChessPiece {
     
     //Creates the Bishop object
     public Bishop( int x, int y, int color ){
-        setX( x );
-        setY( y );
-        setColor( color );
+        super( x, y, color);
     }
 
     /* (non-Javadoc)

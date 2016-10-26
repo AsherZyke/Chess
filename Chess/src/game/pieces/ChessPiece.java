@@ -7,7 +7,7 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public abstract class chessPiece implements gamePiece {
+public abstract class ChessPiece implements gamePiece {
 	
 	//Position on the x axis
 	private int x;
@@ -18,6 +18,12 @@ public abstract class chessPiece implements gamePiece {
 	//Color
 	private int color;
 	
+	
+	public ChessPiece( int x, int y, int color ) {
+	    this.x = x;
+	    this.y = y;
+	    this.color = color;
+	}
 	//Gets x coordinate
 	public int getX(){
 		return x;
@@ -26,6 +32,16 @@ public abstract class chessPiece implements gamePiece {
 	//Gets y coordinate
 	public int getY(){
 		return y;
+	}
+	
+	//Gets the piece's color
+	public int getColor() {
+	    return color;
+	}
+	
+	//Checks to see if the piece is taken
+	public boolean checkIfTaken() {
+	    return isTaken;
 	}
 	
 	//Moves the chess piece

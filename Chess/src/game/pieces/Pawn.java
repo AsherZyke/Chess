@@ -9,13 +9,11 @@ package game.pieces;
  * @author benjamin.zich
  *
  */
-public class Pawn extends chessPiece {
+public class Pawn extends ChessPiece {
 
 	//Creates a pawn
 	public Pawn(int x, int y, int color) {
-		setX( x );
-		setY( y );
-		setColor( color );
+		super( x, y, color);
 	}
 	
 	/* (non-Javadoc)
